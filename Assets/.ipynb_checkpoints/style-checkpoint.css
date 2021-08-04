@@ -64,17 +64,19 @@ li a:hover {
 
 html,
 body {
-  height: 100%;
-  margin: 0;
+    
+    height: 100%;
+    margin: 0;
 }
 
 html {
-    background-color: white;
+    background-color: grey;
 }
 
 
 body {
-    background-color: rgb(240,240,240);
+    background-image: url('background.jpg');
+    background-size: 100% 100%;
     padding: 0;
     opacity: 0;
     transition: opacity 2s;
@@ -101,6 +103,24 @@ body {
 .content {
     font-size:25px;
     margin:40px;
+}
+
+
+/* ------- Format Footer ---------*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top:0px;
+    padding-bottom:0px;
+    width: 100%;
+    background-color: white;
+    opacity:1;
+    color: black;
+    text-align: center;
+    font-family: 'Oxygen';
+    height: 70px;
 }
 
 
