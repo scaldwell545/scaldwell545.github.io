@@ -1,0 +1,134 @@
+/* ------- Format Navbar ------------*/
+
+nav {
+    background-color:white;
+    margin-top:0px;
+    margin-bottom:50px;
+/*     -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px; */
+}
+
+.navbar .navbar-brand {
+    color:black;
+    padding: 15px;
+}
+
+.navbar-brandmain {
+    font-size:30px;
+}
+
+.navbar-brandsecondary {
+    font-size:20px;
+}
+
+
+nav .navbar-nav li {
+    padding-right:20px;
+}
+
+nav .navbar-nav li a{
+    font-weight:bold;
+    color: black !important;
+    font-size: 15px;
+    opacity: 1;
+    transition: 0.3s;
+    font-family: 'Oxygen';
+}
+
+nav .navbar-nav li a:hover{
+    font-weight:bold;
+    color: black !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Change the link color on hover */
+li a:hover {
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(225, 240, 252);
+}
+
+/* ---------------------------------------*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+    background-color: white;
+}
+
+
+body {
+    background-color: rgb(240,240,240);
+    padding: 0;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+
+.colinfo {
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.info {
+    text-align:left;  
+    font-family: 'Oxygen';
+    font-weight:bold;
+}
+
+.content {
+    font-size:25px;
+    margin:40px;
+}
+
+
+/* ------- Adjust for Small Screen ---------*/
+
+@media (max-width: 1000px) {
+    
+    
+    nav.navbar {
+        background-color:white;
+    }
+    
+    
+    .navbar-brandsecondary {
+        color:transparent;
+        font-family: 'Oxygen';
+        font-size:0px;
+    }
+    
+    a {
+        color:rgb(91, 192, 222);
+    }
+    
+    .navbar-collapse {
+        text-align:center;
+    }
+    
+    .info {
+        text-align:center;
+    }
+}
