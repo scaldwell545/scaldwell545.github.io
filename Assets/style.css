@@ -54,7 +54,7 @@ li a:hover {
     -moz-border-radius-bottomleft: 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background-color: rgb(225, 240, 252);
+    background-color: #c5e3fc;
 }
 
 /* ---------------------------------------*/
@@ -101,6 +101,17 @@ body {
 .content {
     font-size:20px;
     margin:40px;
+}
+
+.btn-primary {
+    color: white;
+    background-color:#5a9ed6;
+    border-color:#5a9ed6;
+}
+
+.btn-primary:hover {
+    background-color:#005ca6;
+    border-color:#005ca6;
 }
 
 
@@ -152,4 +163,5 @@ body {
     .info {
         text-align:center;
     }
+    
 }
