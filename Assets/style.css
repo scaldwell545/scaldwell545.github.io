@@ -3,13 +3,10 @@
 nav {
     background-color:white;
     margin-top:0px;
-    margin-bottom:50px;
-/*     -moz-border-radius-topleft: 10px;
-    -moz-border-radius-topright: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px; */
+    margin-bottom:40px;
+/*     -webkit-box-shadow: 1px 1px 1px 1px #888888;
+    -moz-box-shadow:    1px 1px 1px 1px #888888;
+    box-shadow:         1px 1px 1px 1px #888888; */
 }
 
 .navbar .navbar-brand {
@@ -70,13 +67,14 @@ body {
 }
 
 html {
-    background-color: grey;
+    background-color: rgb(235,235,235);
 }
 
 
 body {
-    background-image: url('background.jpg');
-    background-size: 100% 100%;
+/*     background-image: url('background.jpg'); */
+    background-color: transparent;
+/*     background-size: 100% 100%; */
     padding: 0;
     opacity: 0;
     transition: opacity 2s;
@@ -101,7 +99,7 @@ body {
 }
 
 .content {
-    font-size:25px;
+    font-size:20px;
     margin:40px;
 }
 
@@ -112,7 +110,7 @@ body {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding-top:0px;
+    padding-top:5px;
     padding-bottom:0px;
     width: 100%;
     background-color: white;
@@ -120,7 +118,10 @@ body {
     color: black;
     text-align: center;
     font-family: 'Oxygen';
-    height: 70px;
+    height: 35px;
+/*     -webkit-box-shadow: 0px -1px 1px 0px #888888;
+    -moz-box-shadow: 0px -1px 1px 0px #888888;
+    box-shadow: 0px -1px 1px 0px #888888; */
 }
 
 
