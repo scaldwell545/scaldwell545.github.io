@@ -1,25 +1,18 @@
 /* ------- Format Navbar ------------*/
 
+.navbar {
+    -webkit-box-shadow: 0 3px 6px -6px black;
+    -moz-box-shadow: 0 3px 6px -6px black;
+    box-shadow: 0 3px 6px -6px black;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width 999*/
+}
+
+
 nav {
-    background-color:white;
-    margin-top:0px;
-    margin-bottom:40px;
-/*     -webkit-box-shadow: 1px 1px 1px 1px #888888;
-    -moz-box-shadow:    1px 1px 1px 1px #888888;
-    box-shadow:         1px 1px 1px 1px #888888; */
-}
-
-.navbar .navbar-brand {
-    color:black;
-    padding: 15px;
-}
-
-.navbar-brandmain {
-    font-size:30px;
-}
-
-.navbar-brandsecondary {
-    font-size:20px;
+    z-index: 5;
 }
 
 
@@ -28,17 +21,23 @@ nav .navbar-nav li {
 }
 
 nav .navbar-nav li a{
+    text-decoration: underline solid transparent;
+    transition: text-decoration 1s ease;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.5em;
     font-weight:bold;
     color: black !important;
     font-size: 15px;
     opacity: 1;
-    transition: 0.3s;
-    font-family: 'Oxygen';
+    transition: 1s;
 }
 
 nav .navbar-nav li a:hover{
     font-weight:bold;
     color: black !important;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.5em;
 }
 
 .navbar-toggler-icon {
@@ -57,6 +56,7 @@ li a:hover {
     background-color: #c5e3fc;
 }
 
+
 /* ---------------------------------------*/
 
 html,
@@ -68,17 +68,18 @@ body {
 
 html {
     background-color: rgb(235,235,235);
+    font-family: 'Oxygen';
 }
 
 
-body {
+/* body {
 /*     background-image: url('background.jpg'); */
     background-color: transparent;
 /*     background-size: 100% 100%; */
     padding: 0;
     opacity: 0;
     transition: opacity 2s;
-}
+/* } */
 
 
 .colinfo {
@@ -138,7 +139,7 @@ body {
 
 /* ------- Adjust for Small Screen ---------*/
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     
     
     nav.navbar {
