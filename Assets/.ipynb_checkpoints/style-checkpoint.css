@@ -7,11 +7,20 @@ background-image {
 	background-position: center;
 	background-repeat: no-repeat;
 /* 	background-size: fill; */
-    background-image: url('https://i0.wp.com/ribook.org/wp-content/uploads/2019/01/light-blue-background.jpg?ssl=1');	
+    background-image: url('background.png');	
 	z-index: -3;
     opacity: 1;
 }
 
+a img {
+    position: relative;
+    top: 0;
+    transition: top ease 1s;
+}
+
+a img:hover{ 
+    top: -10px;
+}
 
 
 
