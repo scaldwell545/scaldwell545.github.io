@@ -3,7 +3,7 @@
     <head>
         <meta charset='UTF-8'/>
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <title>Home</title>
+        <title>S. Caldwell</title>
         
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
@@ -23,11 +23,30 @@
             crossorigin="anonymous">
 
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        
+        
+        <!-- close navbar when click off -->
+        <script>
+            $(document).ready(function () {
+                $(document).click(
+                    function (event) {
+                        var target = $(event.target);
+                        var _mobileMenuOpen = $(".navbar-collapse").hasClass("show");
+                        if (_mobileMenuOpen === true && !target.hasClass("navbar-toggler")) {
+                            $("button.navbar-toggler").click();
+                        }
+                    }
+                );
+            });
+        </script>
         
     </head>
     
     <body onload="document.body.style.opacity='1'">
+    <div class="background-image"></div>
     
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-static-topp">
@@ -41,19 +60,23 @@
                     <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarContent">
+            <a class="navbar-brand" href="/" style="padding-left:150px; color:black; font-size: 20px; font-weight:bold; display: inline-block;">
+                        <p style="margin-top:13px;">S. CALDWELL</p>
+                    </a>
+            
+            <div class="collapse navbar-collapse" id="navbarContent" style="padding-right:150px; padding-left:150px;">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="main.html"> HOME </a>
+                        <a class="nav-link" href="main.html">  &nbsp; HOME &nbsp; </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="about.html"> ABOUT </a>
+                        <a class="nav-link" href="about.html"> &nbsp; ABOUT &nbsp;  </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="resume.html"> RESUME </a>
+                        <a class="nav-link" href="resume.html">  &nbsp; RESUME &nbsp; </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="contact.html"> CONTACT </a>
+                        <a class="nav-link" href="contact.html">  &nbsp; CONTACT &nbsp;  </a>
                     </li>
                 </ul>
             </div>
@@ -62,25 +85,37 @@
         <!-- Content -->
         
         <div class="container">
-            <div class="row" style="padding-bottom:50px">
+            <div class="row" style="padding-bottom:0px; padding-top:150px;">
                 <div class="container">
                     <div class="row" style="position: relative; padding:30px">
-                        <div class='col' style="padding:20px;">
-                            <img src="profile_pic.jpg" alt="profile pic" style="border-radius:50%; max-width:100%; box-shadow: 10px 10px 8px black;">
-                        </div>
-                        <div class='col colinfo' style="padding:20px;">
+                        <div class='col-md-6 colinfo' style="padding:20px;">
                             <div class="info">
-                                <h3 style="padding-left:30px; padding-right:30px; padding-top:50px;">Hi,</h3>
-                                <h1 style="padding-left:30px; padding-right:30px;">I'm Sam Caldwell.</h1>
+                                <h3 style="padding-left:30px; padding-right:30px; padding-top:50px;">Hi, I'm</h3>
+                                <h1 style="padding-left:30px; padding-right:30px;">Samuel Caldwell.</h1>
                                 <br>
-                                <h3 style="padding-left:30px; padding-right:30px; padding-bottom:50px;">Welcome!</h3>
                                 <a href="about.html"><button type="button" class="btn btn-primary" style="margin-left:30px; padding-left:30px; padding-right:30px; font-weight:bold; margin-right:30px;">Learn More</button></a>
                             </div>
+                        </div>
+                        <div class='col-md-6' style="padding:20px; display: inline-block;">
+                            <img src="profile_pic.jpg" alt="profile pic" style="border-radius:50%; max-width:100%; box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);">
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
+        
+        <div class="container" style="max-width: 100%; margin-bottom:0px; padding-bottom:0px;">
+            <div class="row" style="margin-bottom:0px; margin-top:60px; background-color: rgba(250,250,250,0.95); padding:150px;">
+                <div class='col' style="padding-right:0; text-align:left;">
+                    <h2>Recent Projects</h2><br>
+                    <p style="font-size: 20px;">Mean annual exposure of PM2.5 (fine particulate) air pollution is measured in micrograms per cubic meter. <br><br>Countries such as Nepal, Nigeria, Chad, China, and India are among the top 20 countries in mean PM2.5 air pollution. Mean PM2.5 air pollution for Europe, the world, and the U.S. are included for reference.</p>
+                </div>
+<!--                 <div class="col-md-8" style="padding-left:0;">
+                    <div id="lineDiv"></div>
+                </div> -->
+          </div>
+      </div>
         
         
         <div class="footer">
