@@ -180,16 +180,14 @@ html, body {
 .footer {
 /*     position: fixed; */
     left: 0;
+    right:0;
     bottom: 0;
-    padding-top:5px;
-    padding-bottom:0px;
+    padding:100px;
     width: 100%;
-    background-color: black;
     opacity:1;
-    color: white;
-    text-align: center;
+    margin:0px;
 /*     font-family: 'Oxygen'; */
-    height: 35px;
+/*     height: 35px; */
 /*     -webkit-box-shadow: 0px -1px 1px 0px #888888;
     -moz-box-shadow: 0px -1px 1px 0px #888888;
     box-shadow: 0px -1px 1px 0px #888888; */
@@ -210,6 +208,19 @@ html, body {
     padding-top:150px;
 }
 
+.huzah {
+    border-right: 1px solid #6d6d6d;
+}
+
+.icons {
+    font-size:35px;
+    color:#6d6d6d;
+}
+
+.icons:hover {
+    color:#1E90FF;
+}
+
 
 /* ------- Adjust for Small Screen ---------*/
 
@@ -221,6 +232,11 @@ html, body {
     
     a img {
         display: none;
+    }
+    
+    
+    .huzah {
+        border-right: 0px solid #6d6d6d;
     }
     
     
