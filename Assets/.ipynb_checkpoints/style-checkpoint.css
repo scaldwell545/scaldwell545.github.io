@@ -18,8 +18,8 @@ a img {
     transition: top ease 1s;
     margin-bottom:15px;
     transition: 0.5s;
-    border: 1px solid #ebebeb;
-    border-radius: 0px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
 }
 
 a img:hover{ 
@@ -59,8 +59,8 @@ nav {
 
 nav .navbar-nav li {
     margin:0px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top:6px;
+    padding-bottom:6px;
     padding-right:0px;
     padding-left:0px;
 }
@@ -72,7 +72,7 @@ nav .navbar-nav li a{
     text-underline-offset: 0.5em;
 /*     font-weight:bold; */
     color: black !important;
-    font-size: 13px;
+    font-size: 12px;
     opacity: 1;
     transition: 0.5s;
 }
@@ -171,7 +171,7 @@ html, body {
     -webkit-box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 6px 15px 0px rgba(0, 0, 0, 0.2);
-    top: -10px;
+    top: -5px;
 }
 
 
@@ -205,6 +205,11 @@ html, body {
     padding-right:180px;
 }
 
+.duh {
+    padding-bottom:10px; 
+    padding-top:150px;
+}
+
 
 /* ------- Adjust for Small Screen ---------*/
 
@@ -223,9 +228,13 @@ html, body {
         background-color:white;
     }
     
+    .duh {
+        padding-top:80px;
+    }
+    
     .bleh {
-        padding-left:100px;
-        padding-right:100px;
+        padding-left:75px;
+        padding-right:75px;
     }
     
     .navbar-brandsecondary {
