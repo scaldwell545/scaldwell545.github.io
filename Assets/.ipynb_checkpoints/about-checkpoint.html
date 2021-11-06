@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
+        <link rel="shortcut icon" href="circled-s-filled.png" type="image/x-icon">
+        
         <meta charset='UTF-8'/>
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <title>About</title>
+        <title>S. Caldwell</title>
         
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
@@ -23,14 +26,36 @@
             crossorigin="anonymous">
 
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/659d10d3f4.js" crossorigin="anonymous"></script>
+
+        
+        
+        <!-- close navbar when click off -->
+        <script>
+            $(document).ready(function () {
+                $(document).click(
+                    function (event) {
+                        var target = $(event.target);
+                        var _mobileMenuOpen = $(".navbar-collapse").hasClass("show");
+                        if (_mobileMenuOpen === true && !target.hasClass("navbar-toggler")) {
+                            $("button.navbar-toggler").click();
+                        }
+                    }
+                );
+            });
+        </script>
         
     </head>
     
     <body onload="document.body.style.opacity='1'">
+    <div class="background-image"></div>
     
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-static-topp">
             <button class="navbar-toggler" 
                     type="button" 
                     data-target="#navbarContent" 
@@ -41,19 +66,23 @@
                     <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarContent">
+            <a class="navbar-brand" href="main.html" style="padding:0px; padding-left:150px; color:black; font-size: 24px; font-weight:bold; display: inline-block;">
+                        <p style="margin-top:6px ;margin-bottom:6px;">S. Caldwell</p>
+                    </a>
+            
+            <div class="collapse navbar-collapse" id="navbarContent" style="padding-right:150px; padding-left:150px;">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="main.html"> HOME </a>
+                        <a class="nav-link" href="main.html">  &nbsp; HOME &nbsp; </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="about.html"> ABOUT </a>
+                        <a class="nav-link" href="about.html"> &nbsp; ABOUT &nbsp;  </a>
                     </li>
+<!--                     <li class="nav-item active">
+                        <a class="nav-link" href="resume.html">  &nbsp; RESUME &nbsp; </a>
+                    </li> -->
                     <li class="nav-item active">
-                        <a class="nav-link" href="resume.html"> RESUME </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html"> CONTACT </a>
+                        <a class="nav-link" href="contact.html">  &nbsp; CONTACT &nbsp;  </a>
                     </li>
                 </ul>
             </div>
@@ -62,64 +91,90 @@
         <!-- Content -->
         
         <div class="container">
-            <div class="row" style="padding-bottom:50px">
+            <div class="row duh">
                 <div class="container">
                     <div class="row" style="position: relative; padding:30px">
-                        <div class='col colinfo' style="padding:20px;">
+                        <div class='col-md-6' style="padding:0px; display: inline-block;">
+                            <img src="selfie.jpg" alt="profile pic" style="border-radius:0px; max-width:70%; box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2); float: right; margin-right:50px; margin-top:20px;">
+                        </div>
+                        <div class='col-md-6 colinfo' style="padding:20px;">
                             <div class="info">
-                                <h1 style="padding-left:30px; padding-right:30px; padding-top:50px;">About Me</h1>
-                                <hr> 
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 col-lg-7">
-                                    <div class="content">
-                                        <p>Hello! My name is Sam and I'm a recent graduate who's looking to make an entrance in the IT field. 
-                                            In particular, I hope to enter into the Data Science and Analytics sector. 
-                                            I graduated from Truman State University with a BS in Mathematics and a minor in Statistics. 
-                                            Currently, I am attending a data science certificate program at Washington University in St. Louis, 
-                                            and I hope to further my post-graduate education with a Masters in Data Science and Analytic Storytelling. 
-                                            On a more personal note, I'm also big into cooking, observational astronomy, and music!
-                                        </p>
-                                    </div>
+                                <div class="row">
+                                    <h1 style="font-weight:bold; padding-top:20px;">Personal Details</h1>
                                 </div>
-                                <div class="col-md-12 col-lg-5">
-                                    <div class="content">
-                                        <center><img src="truman_logo.jpg" class="center" alt="truman logo" style="border-radius:50%; max-width:80%; max-height:80%;"></center>
-                                    </div>
+                                <br>
+                                <div class="row colinfo2">
+                                    <p style="padding-left:30px; padding-right:30px; font-size: 15px; font-weight:lighter;"> Hello! My name is Sam and I'm a recent graduate who's looking to make an entrance in the IT field. In particular, I hope to enter into the Data Science and Analytics sector. I graduated from Truman State University with a BS in Mathematics and a minor in Statistics. <br><br> Recently, I recieved a certificate in data science and analytics from Washington University in St. Louis, and I hope to further my post-graduate education with a Masters in Data Science and Analytic Storytelling. On a more personal note, I'm big into cooking, astronomy, and strategy games! I also have two cute cats, Cocoa and Nibs, who you can see by clicking the button below.</p>
+                                    <br>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="info">
-                                    <h1 style="padding-left:30px; padding-right:30px; padding-top:50px;">Skills</h1>
-                                    <hr> 
-                                </div>
-                                <div class="content">
-                                    <ul>
-                                        <li style="padding-left:30px;">Python 3 (Matplotlib, Pandas, Numpy, SciPy, etc.)</li>
-                                        <li style="padding-left:30px;">SQL</li>
-                                        <li style="padding-left:30px;">PostgreSQL /PgAdmin</li>
-                                        <li style="padding-left:30px;">MongoDB / PyMongo</li>
-                                        <li style="padding-left:30px;">API Interactions</li>
-                                        <li style="padding-left:30px;">Version Control Software (Git)</li>
-                                        <li style="padding-left:30px;">VBA Scripting</li>
-                                        <li style="padding-left:30px;">HTML / CSS / JavaScript</li>
-                                        <li style="padding-left:30px;">Web Scraping / HTML Parsing (BeautifulSoup)</li>
-                                        <li style="padding-left:30px;">C++</li>
-                                        <li style="padding-left:30px;">Google Suite</li>
-                                        <li style="padding-left:30px;">Microsoft Office Suite</li>
-                                    </ul>
+                                <br>
+                                <div class="row">
+                                    <a href="about.html"><button type="button" class="btn btn-primary" style="margin-left:0px; padding-left:30px; padding-right:30px; font-weight:bold; margin-right:30px;">Cats!</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
         
         
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2021. Thanks for visiting!</p>
+        <div class="container" style="max-width: 100%; margin-bottom:0px; padding-bottom:0px;">
+            <div class="row bleh2">
+                <div class='col' style="padding-right:0; text-align:center;">
+                    <h1>Experience and Education</h1>
+                    <br>
+                    <br>
+                    <div class="timeline">
+                        <div class="containerp left">
+                            <div class="content">
+                                <br>
+                                <p style="font-size:15px; font-weight:bold;">Bachelors of Science in Mathematics and Statistics</p>
+                                <br>
+                                <p style="font-size:12px;">Truman State University, May 2021</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="containerp right">
+                            <div class="content">
+                                <br>
+                                <p style="font-size:15px; font-weight:bold;">Certificate in Data Science and Analytics</p>
+                                <br>
+                                <p style="font-size:12px;">Washington University in St. Louis, Oct 2021</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                </div>
+<!--                 <div class="col-md-8" style="padding-left:0;">
+                    <div id="lineDiv"></div>
+                </div> -->
+          </div>
+      </div>
+        
+        
+        <div class="row footer" style="background-color: black;">
+            <div class ="col-md-6 huzah">
+                <h3 style="color: white;">About</h3>
+                <p>This website was built from scratch with <br> HTML, CSS, and JavaScript. Hosted by GitHub. <br>Inspired by a template from Colorlib.<br> Thanks for visiting! &copy; 2021<br><br></p>
+            </div>
+            <div class ="col-md-6 huzah2">
+                <h3 style="color: white;">Follow</h3>
+                <br>
+                &nbsp; &nbsp;
+                <a href="https://github.com/scaldwell545" style="text-decoration: none;">
+                    <i class="fab fa-github icons"></i>
+                </a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://www.linkedin.com/in/samuel-caldwell-86148b175/" style="text-decoration: none;">
+                    <i class="fab fa-linkedin-in icons"></i>
+                </a>
+                &nbsp; &nbsp;
+            </div>
         </div>
         
     

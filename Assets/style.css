@@ -139,9 +139,13 @@ html, body {
     -moz-border-radius-bottomleft: 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
     border-radius: 20px 20px 20px 20px;
-/*     background-color: white; */
+     background-color: white;
     box-shadow: 10px 10px 8px #888888;
 } */
+
+.colinfo2 {
+    border-left: 2px solid #1E90FF;
+}
 
 .info {
     text-align:left;  
@@ -203,6 +207,15 @@ html, body {
     padding-right:180px;
 }
 
+.bleh2 {
+    margin-bottom:0px; 
+    margin-top:60px; 
+    background-color: white; 
+    padding:100px; 
+    padding-left:180px; 
+    padding-right:180px;
+}
+
 .duh {
     padding-bottom:10px; 
     padding-top:150px;
@@ -210,6 +223,13 @@ html, body {
 
 .huzah {
     border-right: 1px solid #6d6d6d;
+    text-align: right;
+    color: #6d6d6d;
+}
+
+.huzah2 {
+    text-align: left;
+    color: #6d6d6d;
 }
 
 .icons {
@@ -221,10 +241,161 @@ html, body {
     color:#1E90FF;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+/* body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+} */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #e9e9e9;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 0px;
+}
+
+/* Container around content */
+.containerp {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+    
+}
+
+/* The circles on the timeline */
+.containerp::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: -12px;
+  background-color: #1E90FF;
+  border: 6px solid #e9e9e9;
+  top: 100px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+/* .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+} */
+
+/* Add arrows to the right container (pointing left) */
+/* .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+ */
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -11px;
+}
+
+/* The actual content */
+.content {
+  padding: 10px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 1px;
+    -webkit-box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------- Adjust for Small Screen ---------*/
 
 @media (max-width: 1200px) {
+    
+    .colinfo2 {
+        text-align:left;
+    }
+    
+    /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .containerp {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .containerp::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 20px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
     
     nav.navbar-brand {
         display: none;
@@ -237,6 +408,11 @@ html, body {
     
     .huzah {
         border-right: 0px solid #6d6d6d;
+        text-align: center;
+    }
+    
+    .huzah2 {
+        text-align: center;
     }
     
     
@@ -249,6 +425,10 @@ html, body {
     }
     
     .bleh {
+        padding-left:75px;
+        padding-right:75px;
+    }
+    .bleh2 {
         padding-left:75px;
         padding-right:75px;
     }
