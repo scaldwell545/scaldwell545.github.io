@@ -242,6 +242,11 @@ html, body {
     color:#1E90FF;
 }
 
+.ints {
+    padding:50px;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -273,7 +278,7 @@ html, body {
 
 /* Container around content */
 .containerp {
-  padding: 10px 40px;
+  padding: 0px 20px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -363,6 +368,10 @@ html, body {
 /* ------- Adjust for Small Screen ---------*/
 
 @media (max-width: 1200px) {
+    
+    .ints{
+        padding:20px;
+    }
     
     .colinfo2 {
         text-align:left;
