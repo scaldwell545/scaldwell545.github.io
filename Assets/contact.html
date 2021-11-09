@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <link rel="shortcut icon" href="circled-s-filled.png" type="image/x-icon">
+        
+        <meta charset='UTF-8'/>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Samuel Caldwell</title>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/659d10d3f4.js" crossorigin="anonymous"></script>
+
+        
+        
+        <!-- close navbar when click off -->
+        <script>
+            $(document).ready(function () {
+                $(document).click(
+                    function (event) {
+                        var target = $(event.target);
+                        var _mobileMenuOpen = $(".navbar-collapse").hasClass("show");
+                        if (_mobileMenuOpen === true && !target.hasClass("navbar-toggler")) {
+                            $("button.navbar-toggler").click();
+                        }
+                    }
+                );
+            });
+        </script>
+        
+    </head>
+    
+    <body onload="document.body.style.opacity='1'">
+    <div class="background-image"></div>
+    
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-static-topp">
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-target="#navbarContent" 
+                    data-toggle="collapse"
+                    aria-controls="navbarContent" 
+                    aria-expanded="false" 
+                    aria-labelledby="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <a class="navbar-brand" href="main.html">
+                        <p style="margin-top:6px; margin-bottom:6px;">S. Caldwell</p>
+                    </a>
+            
+            <div class="collapse navbar-collapse" id="navbarContent" style="padding-right:150px; padding-left:150px;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="main.html">  &nbsp; HOME &nbsp; </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html"> &nbsp; ABOUT &nbsp;  </a>
+                    </li>
+<!--                     <li class="nav-item active">
+                        <a class="nav-link" href="resume.html">  &nbsp; RESUME &nbsp; </a>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">  &nbsp; CONNECT &nbsp;  </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Content -->
+        
+        <div class="container">
+            <div class="row duh">
+                <div class="container" style="padding:50px">
+                    <div class="row">
+                        <h1 style="font-weight:bold; margin:20px; margin-left:0px;">Connect With Me</h1>
+                    </div>
+                    <div class="row colinfo2">
+                        <div class='col' style="padding:20px;">
+<!--                             <div class="info">
+                                <div class="row">
+                                    <h1 style="font-weight:bold; padding-top:20px;">Personal Details</h1>
+                                </div>
+                                <br>
+                                <div class="row colinfo2"> -->
+                                    <p style="padding-left:30px; padding-right:30px; padding-bottom:0px; font-size: 15px; font-weight:lighter;"> Feel free to send me a connection request on LinkedIn or view my public repositories on GitHub using the links below. If you'd like to talk with me or request a resume, send me a message on LinkedIn and I'll try to get back to you. Thanks so much for visiting!</p>
+                            <!--                                 </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+            <div class="container">
+                <div class="row" style="text-align:center; margin-bottom:100px;">
+                    <div class="col-md-6" style='padding:20px'>
+                        <a href="https://www.linkedin.com/in/samuel-caldwell-86148b175/" style="text-decoration: none; margin:0px;">
+                            <i class="fab fa-linkedin-in icons2"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6" style='padding:20px'>
+                        <a href="https://github.com/scaldwell545" style="text-decoration: none; margin:0px;">
+                            <i class="fab fa-github icons2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        
+        <div class="row footer" style="background-color: black;">
+            <div class ="col-md-6 huzah">
+                <h3 style="color: white;">About</h3>
+                <p>This website was built from scratch with <br> HTML, CSS, and JavaScript. Hosted by GitHub. <br>Inspired by a template from Colorlib.<br> Thanks for visiting! &copy; 2021<br><br></p>
+            </div>
+            <div class ="col-md-6 huzah2">
+                <h3 style="color: white;">Follow</h3>
+                <br>
+                &nbsp; &nbsp;
+                <a href="https://github.com/scaldwell545" style="text-decoration: none;">
+                    <i class="fab fa-github icons"></i>
+                </a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://www.linkedin.com/in/samuel-caldwell-86148b175/" style="text-decoration: none;">
+                    <i class="fab fa-linkedin-in icons"></i>
+                </a>
+                &nbsp; &nbsp;
+            </div>
+        </div>
+        
+    
+    </body>
+</html>

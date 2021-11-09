@@ -245,6 +245,28 @@ html, body {
     color:#1E90FF;
 }
 
+.icons2 {
+    font-size:200px; 
+    width: 100% !important;
+    height: 100% !important;
+    padding:80px; 
+    background-color:white; 
+    color:#1E90FF;
+    transition:0.5s;
+    border-radius:5px;
+}
+
+.icons2:hover {
+    background-color:#1E90FF; 
+    color:white;
+    -webkit-box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px 15px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
 .ints {
     padding:50px;
 }
