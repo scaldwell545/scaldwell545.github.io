@@ -1,3 +1,23 @@
+.skills {
+    font-size:3px;
+  text-align: right; /* Right-align text */
+  padding-top: 0px; /* Add top padding */
+  padding-bottom: 0px; /* Add bottom padding */
+    margin:20px;
+    margin-top:0px;
+    margin-left:50px;
+    margin-right:50px;
+  color: #1E90FF; /* White text color */
+    background-color: #dcdcdc;
+    border-radius: 10px;
+}
+
+.twofifths {width: 25%; background-color: #1E90FF; border-radius: 10px; border: 6px solid #dcdcdc;}
+.threefifths {width: 50%; background-color: #1E90FF; border-radius: 10px; border: 6px solid #dcdcdc;}
+.fourfifths {width: 75%; background-color: #1E90FF; border-radius: 10px; border: 6px solid #dcdcdc;}
+.one {width: 100%; background-color: #1E90FF; border-radius: 10px; border: 6px solid #dcdcdc;}
+
+
 /* ------- Format Navbar ------------*/
 background-image {
     -webkit-background-size: cover;
