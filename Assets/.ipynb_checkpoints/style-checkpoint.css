@@ -356,6 +356,14 @@ html, body {
     box-shadow: 0 8px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
+a.navbar-brand {
+    padding:0px; 
+    padding-left:150px; 
+    color:black; 
+    font-size: 24px; 
+    font-weight:bold; 
+    display: inline-block;
+}
 
 
 
@@ -409,8 +417,8 @@ html, body {
             left: 0%;
           }
 
-            nav.navbar-brand {
-                display: none;
+            a.navbar-brand {
+                padding-left:0px;
             }
 
             a img {
