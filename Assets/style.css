@@ -254,6 +254,7 @@ html, body {
     color:#1E90FF;
     transition:0.5s;
     border-radius:5px;
+    opacity: 0.75;
 }
 
 .icons2:hover {
